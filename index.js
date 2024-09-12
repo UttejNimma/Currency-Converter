@@ -33,7 +33,7 @@ convert.addEventListener("click",function(){
     let fromCurrency = from.value;
     let toCurrency = to.value;
     let amt = amount.value;
-    let url=`https://v6.exchangerate-api.com/v6/81a59f7c24cbc78af7b7e159/latest/${fromCurrency}`;
+    let url=`https://v6.exchangerate-api.com/v6/{add your key}/latest/${fromCurrency}`;
     fetch(url).then(response=>response.json())
     .then(data=>{
         
